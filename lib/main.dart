@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider.value(
           value: Counter(),
-          // value: 
         ),
       ],
       child:

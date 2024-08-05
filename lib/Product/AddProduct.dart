@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:demo/Payment.dart';
 import 'package:demo/Product/context.dart';
 import 'package:flutter/material.dart';
@@ -101,6 +100,7 @@ class _AddproductState extends State<Addproduct> {
   }
 
   void openCheckout() async {
+    totalPayemnt= totalPayemnt*100;
     var options = {
       'key': 'rzp_live_ILgsfZCZoFIKMb',
       'amount': totalPayemnt,
